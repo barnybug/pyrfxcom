@@ -24,6 +24,7 @@ Run::
 
 Usage
 -----
+Example::
 
     import rfxcom
 
@@ -32,7 +33,7 @@ Usage
     rfx = RFXCom(on_message)
     rfx.setup()
     rfx.run()
-    
+
 
 Changelog
 ---------
