@@ -1,0 +1,6 @@
+*.pyc
+build
+dist
+MANIFEST
+pyrfxcom.egg-info
+.tox
