@@ -68,11 +68,11 @@ def alt_temphydro(part, message, p):
 
 WIND_DIRECTIONS = [ "N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NWN" ]
 def wtgr800_anemometer(part, message, p):
-    dir = WIND_DIRECTIONS[hi_nibble(p[4])]
+    dirno = hi_nibble(p[4])
     speed = lo_nibble(p[7]) * 10 + hi_nibble(p[6]) + lo_nibble(p[6]) / 10.0
     avgspeed = hi_nibble(p[8]) * 10 + lo_nibble(p[8]) + hi_nibble(p[7]) / 10.0
     message['source'] = message['sensor'] = part
-    message['dir'] = dir
+    message['dir'] = dirno
     message['speed'] = speed
     message['avgspeed'] = avgspeed
 
