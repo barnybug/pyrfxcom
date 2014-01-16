@@ -1,8 +1,10 @@
 pyrfxcom
 ========
 
-Python library for reading from an rfxcom USB unit, eg:
-http://www.rfxcom.com/store/Transceivers/12103
+### If you're looking the RFXCOM RFXtrx433 USB, I suggest using the pyRFXtrx library here:
+https://github.com/woudt/pyRFXtrx
+
+Python library for reading from an rfxcom USB unit (now discontinued)
 
 Supported devices
 -----------------
